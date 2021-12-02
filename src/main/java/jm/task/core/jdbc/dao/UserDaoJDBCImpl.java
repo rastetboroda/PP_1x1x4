@@ -34,7 +34,6 @@ public class UserDaoJDBCImpl implements UserDao {
         } catch (SQLException throwables) {
             System.out.println("Ошибка при удалении таблицы");
         }
-
     }
 
     public void saveUser(String name, String lastName, byte age) {
