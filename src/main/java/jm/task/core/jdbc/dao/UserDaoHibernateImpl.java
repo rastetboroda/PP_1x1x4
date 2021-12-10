@@ -30,8 +30,8 @@ public class UserDaoHibernateImpl implements UserDao {
             System.out.println("Таблица создана успешно");
         } catch (Exception e) {
             System.out.println("Таблица не создана");
-//            if (transaction != null) {
-//                transaction.rollback();
+            if (transaction != null) {
+                transaction.rollback();
             }
         }
 
