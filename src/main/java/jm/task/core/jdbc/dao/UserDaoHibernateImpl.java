@@ -34,6 +34,7 @@ public class UserDaoHibernateImpl implements UserDao {
                 transaction.rollback();
             }
         }
+    }
 
 
     @Override
